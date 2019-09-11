@@ -4,18 +4,16 @@ const alumnos = [{nombre:"Daniel",calificaciones:[8, 5, 9, 10, 7]},
 
 let sumacal = 0
 let promedio = 0
-let contador = 0
-let conta = 0
 
-for (let contador = 0; contador < alumnos.length; contador++){
-    for (let conta = 0; conta < alumnos[contador].calificaciones.length; conta++){
-        sumacal = sumacal + alumnos[contador].calificaciones[conta]
+for (let indice = 0; indice < alumnos.length; indice++){
+    for (let index = 0; index < alumnos[indice].calificaciones.length; conta++){
+        sumacal = sumacal + alumnos[indice].calificaciones[conta]
     }
-   promedio = sumacal/alumnos[contador].calificaciones.length
+   promedio = sumacal/alumnos[indice].calificaciones.length
     if (promedio > 6){
         sumacal = 0
     }   else {
-            console.log(alumnos[contador].nombre)
+            console.log(alumnos[indice].nombre)
         }
     
 }
